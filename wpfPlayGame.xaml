@@ -1,0 +1,33 @@
+﻿<Window x:Class="Homework_5.wpfPlayGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework_5"
+        mc:Ignorable="d"
+        Title="We Love Math" Height="350" Width="525" BorderBrush="White" Closing="Window_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="Background.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="lblNum1" Content="11" HorizontalAlignment="Left" Margin="124,110,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden" Width="87"/>
+        <Label x:Name="lblSign" Content="+" HorizontalAlignment="Left" Margin="193,110,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden"/>
+        <Label x:Name="lblNum2" Content="15" HorizontalAlignment="Left" Margin="219,110,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden"/>
+        <Label x:Name="lblEq" Content="=" HorizontalAlignment="Left" Margin="255,110,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="51" Margin="286,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyDown="txtResult_KeyDown" Visibility="Hidden"/>
+        <Button x:Name="submitBtn" Content="Submit" HorizontalAlignment="Left" Margin="191,180,0,0" VerticalAlignment="Top" Width="118" Height="45" FontFamily="Showcard Gothic" FontSize="16" BorderThickness="3" ClipToBounds="True" Background="#FF3C3D3B" BorderBrush="White" Foreground="#FFFFFBF6" Click="submitBtn_Click" Visibility="Hidden"/>
+        <Button x:Name="endBtn" Content="End Game" HorizontalAlignment="Left" Margin="191,239,0,0" VerticalAlignment="Top" Width="118" Height="45" FontFamily="Showcard Gothic" FontSize="16" BorderThickness="3" ClipToBounds="True" Background="#FF3C3D3B" BorderBrush="White" Foreground="#FFFFFBF6" Click="endBtn_Click" Visibility="Hidden"/>
+        <Label x:Name="lblHeader" HorizontalAlignment="Center" Margin="10,47,10.4,223.8" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Showcard Gothic" FontSize="16" Height="50" Width="498">
+            <Label x:Name="label" Content="Label"/>
+        </Label>
+
+        <Label x:Name="inputError" Content="" HorizontalAlignment="Left" Margin="357,123,0,0" VerticalAlignment="Top" Foreground="#FFD11111"/>
+        <Button x:Name="plusSignBtn" Content="+" HorizontalAlignment="Center" Margin="94,104,357.4,156.8" VerticalAlignment="Center" Width="67" Height="60" FontFamily="Showcard Gothic" FontSize="35" BorderThickness="3" ClipToBounds="True" Background="#FF3C3D3B" BorderBrush="White" Foreground="#FFFFFBF6" Click="plusSignBtn_Click"/>
+        <Button x:Name="minusSignBtn" Content="-" HorizontalAlignment="Center" Margin="182,104,269.4,156.8" VerticalAlignment="Center" Width="67" Height="60" FontFamily="Showcard Gothic" FontSize="35" BorderThickness="3" ClipToBounds="True" Background="#FF3C3D3B" BorderBrush="White" Foreground="#FFFFFBF6" Click="minusSignBtn_Click" RenderTransformOrigin="0.498,0.608"/>
+        <Button x:Name="multiSignBtn" Content="*" HorizontalAlignment="Center" Margin="276,102,175.4,158.8" VerticalAlignment="Center" Width="67" Height="60" FontFamily="Showcard Gothic" FontSize="35" BorderThickness="3" ClipToBounds="True" Background="#FF3C3D3B" BorderBrush="White" Foreground="#FFFFFBF6" Click="multiSignBtn_Click" RenderTransformOrigin="0.522,0.463"/>
+        <Button x:Name="divSignBtn" Content="/" HorizontalAlignment="Center" Margin="367,101,84.4,159.8" VerticalAlignment="Center" Width="67" Height="60" FontFamily="Showcard Gothic" FontSize="35" BorderThickness="3" ClipToBounds="True" Background="#FF3C3D3B" BorderBrush="White" Foreground="#FFFFFBF6" Click="divSignBtn_Click"/>
+        <Button x:Name="exitBtn" Content="exit" HorizontalAlignment="Left" Margin="191,239,0,0" VerticalAlignment="Top" Width="118" Height="45" FontFamily="Showcard Gothic" FontSize="16" BorderThickness="3" ClipToBounds="True" Background="#FF3C3D3B" BorderBrush="White" Foreground="#FFFFFBF6" Click="exitBtn_Click"/>
+        <Label x:Name="lblTimer" Content="10 second left" HorizontalAlignment="Left" Margin="387,25,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+    </Grid>
+</Window>
